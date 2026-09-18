@@ -1,0 +1,55 @@
+{
+  "name": "create-weavekit-app",
+  "version": "0.1.1",
+  "description": "Scaffold a new WeaveKit project interactively — `create-weavekit-app <name>`",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "create-weavekit-app": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "weavekit",
+    "create",
+    "scaffold",
+    "cli",
+    "postgres"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weavekit/create-weavekit-app.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "prelint": "node scripts/check-memory-sizes.mjs",
+    "lint": "eslint .",
+    "test": "node --import tsx --test \"tests/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/prompts": "^2.4.0",
+    "@types/validate-npm-package-name": "^4.0.2",
+    "eslint": "^9.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "@weave-kit/engine": "^0.1.0",
+    "prompts": "^2.4.2",
+    "validate-npm-package-name": "^8.0.0"
+  }
+}
