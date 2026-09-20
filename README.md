@@ -41,6 +41,16 @@ A runnable project containing:
 All project operations go through the `weave` CLI, which ships with
 [`@weave-kit/engine`](https://github.com/weavekit/engine).
 
+## Documentation
+
+Full documentation: **[docs.weavekit.io/create-weavekit-app](https://docs.weavekit.io/create-weavekit-app)**
+
+- [Getting started](https://docs.weavekit.io/create-weavekit-app/getting-started)
+- [CLI & options](https://docs.weavekit.io/create-weavekit-app/cli-and-options)
+- [Type presets](https://docs.weavekit.io/create-weavekit-app/type-presets)
+- [Generated project](https://docs.weavekit.io/create-weavekit-app/generated-project)
+- [Engine integration](https://docs.weavekit.io/create-weavekit-app/engine-integration)
+
 ## Requirements
 
 - Node.js 24 LTS
