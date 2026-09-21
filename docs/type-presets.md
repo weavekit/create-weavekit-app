@@ -36,9 +36,7 @@ subsystem out, so it costs nothing at runtime until you enable it.
 
 ## About `business`
 
-`business` is currently a headless backend preset (REST/MCP/RBAC/audit/script) — it generates no
-UI. Files such as `objects/<name>/show.client.js` and `pages/<name>/layout.json` are experimental
-groundwork and have no in-project renderer yet.
+`business` is currently a headless backend preset (REST/MCP/RBAC/audit/script) — it generates no UI.
 
 You can change the composition later with the CLI (`weave module:add` / `weave module:remove`);
 `weavekit.config.ts` is the source of truth.
