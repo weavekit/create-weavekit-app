@@ -1,6 +1,6 @@
 {
   "name": "create-weavekit-app",
-  "version": "0.1.2",
+  "version": "0.3.0",
   "description": "Scaffold a new WeaveKit project interactively — `create-weavekit-app <name>`",
   "type": "module",
   "license": "MIT",
@@ -48,7 +48,7 @@
     "typescript-eslint": "^8.0.0"
   },
   "dependencies": {
-    "@weave-kit/engine": "^0.2.0",
+    "@weave-kit/engine": "^0.3.0",
     "prompts": "^2.4.2",
     "validate-npm-package-name": "^8.0.0"
   }
