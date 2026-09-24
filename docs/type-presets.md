@@ -34,6 +34,17 @@ subsystems: {
 Script hooks run sandboxed in isolated workers (`*.server.js`). The other presets leave the
 subsystem out, so it costs nothing at runtime until you enable it.
 
+## Workflow
+
+Presets never enable a state machine. It is declaration-driven and opt-in per object:
+
+```sh
+weave workflow:open <object>      # adds workflowEnabled: true + a starter workflow.json
+```
+
+Only the `onTimeout` timer scheduler is a subsystem — add it with `weave module:add workflow` when you
+use state timeouts. See the engine [workflow tutorial](https://github.com/weavekit/engine/blob/main/docs/guides/workflow-tutorial.md).
+
 ## About `business`
 
 `business` is currently a headless backend preset (REST/MCP/RBAC/audit/script) — it generates no UI.
