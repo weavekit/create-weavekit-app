@@ -17,7 +17,7 @@ generated README. The core engine is always enabled; a preset never trims it.
 ## Field-type gating
 
 `agent` presets whitelist only the engine's primitive field types. The other presets additionally
-whitelist the semantic field types (for example `person` and `department`). The whitelist is
+whitelist the semantic field types (for example `user` and `department`). The whitelist is
 written to `features.fieldTypes` in `weavekit.config.ts` and is fail-closed: a schema using a type
 outside the list is rejected. Extend the list in the config to opt in to more types.
 
