@@ -18,15 +18,15 @@ A runnable project contains:
 ## The example object
 
 `objects/leads/schema.json` defines a `leads` object with fields such as `title`, `status`
-(`active` | `archived`), `owner_id`, `team_id`, `company`, `amount`, and `source`. It ships with
+(`active` | `archived`), `owner_id`, `department_id`, `company`, `amount`, and `source`. It ships with
 three roles to demonstrate RBAC:
 
 - `admin` — full access to all fields.
 - `sales` — reads only rows it owns (`read: "own"`), cannot read `source`.
-- `sales_manager` — reads rows for its team (`read: "team"`), including `source`.
+- `sales_manager` — reads rows for its department (`read: "department"`), including `source`.
 
-The row scopes come from the `ownership: true` and `team: true` flags on `owner_id` and `team_id`.
-Role names are user-defined — they must match the keys in your schema's `permissions`.
+The row scopes come from the `ownership: true` and `department: true` flags on `owner_id` and
+`department_id`. Role names are user-defined — they must match the keys in your schema's `permissions`.
 
 ## The configuration
 
