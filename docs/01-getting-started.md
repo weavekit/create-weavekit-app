@@ -44,6 +44,6 @@ API under `/api` and the MCP endpoint under `/mcp`.
 
 ## Next steps
 
-- [CLI and options](cli-and-options.md) — every flag the scaffolder accepts
-- [Generated project](generated-project.md) — the files that were written
-- [Engine integration](engine-integration.md) — how the project talks to the engine
+- [CLI and options](02-cli-and-options.md) — every flag the scaffolder accepts
+- [Generated project](04-generated-project.md) — the files that were written
+- [Engine integration](05-engine-integration.md) — how the project talks to the engine

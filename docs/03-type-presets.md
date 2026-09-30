@@ -43,7 +43,7 @@ weave workflow:open <object>      # adds workflowEnabled: true + a starter workf
 ```
 
 Only the `onTimeout` timer scheduler is a subsystem — add it with `weave module:add workflow` when you
-use state timeouts. See the engine [workflow tutorial](https://github.com/weavekit/engine/blob/main/docs/guides/workflow-tutorial.md).
+use state timeouts. See the engine [workflow guide](https://docs.weavekit.io/engine/guides/workflow).
 
 ## About `business`
 

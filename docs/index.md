@@ -15,6 +15,6 @@ weave migrate             # schema.json -> PostgreSQL tables
 weave dev                 # http://localhost:3000
 ```
 
-See [Getting started](getting-started.md) for the full walkthrough, [CLI and options](cli-and-options.md)
-for the flags, [Type presets](type-presets.md) to choose a starting point, and
-[Generated project](generated-project.md) for what ends up on disk.
+See [Getting started](01-getting-started.md) for the full walkthrough, [CLI and options](02-cli-and-options.md)
+for the flags, [Type presets](03-type-presets.md) to choose a starting point, and
+[Generated project](04-generated-project.md) for what ends up on disk.
