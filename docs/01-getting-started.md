@@ -5,7 +5,7 @@ description: Create and run your first WeaveKit project.
 
 ## Requirements
 
-- Node.js 24 LTS
+- Node.js 22+
 - A reachable PostgreSQL database
 
 ## Create a project

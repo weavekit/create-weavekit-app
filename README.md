@@ -53,7 +53,7 @@ Full documentation: **[docs.weavekit.io/create-weavekit-app](https://docs.weavek
 
 ## Requirements
 
-- Node.js 24 LTS
+- Node.js 22+
 
 ## License
 
