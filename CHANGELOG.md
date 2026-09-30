@@ -3,6 +3,16 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.7.0]
+
+Scaffolds projects on `@weave-kit/engine@0.7.0` (pinned as `^0.7.0` in the generated `package.json`)
+and requires Node 22+.
+
+### Changed
+
+- Requires Node 22+ (was Node 24).
+- Generated projects declare `engines.node >=22`.
+
 ## [0.6.0]
 
 Scaffolds projects on `@weave-kit/engine@0.6.0` (pinned as `^0.6.0` in the generated
