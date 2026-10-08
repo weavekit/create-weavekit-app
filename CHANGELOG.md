@@ -3,6 +3,15 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.9.0]
+
+Scaffolds projects on `@weave-kit/engine@0.9.0` (pinned as `^0.9.0` in the generated `package.json`).
+
+### Changed
+
+- Generated projects depend on `@weave-kit/engine@^0.9.0` (schema revisions / atomic deploy, audit
+  modes, cursor pagination, explicit access principal).
+
 ## [0.8.0]
 
 Scaffolds projects on `@weave-kit/engine@0.8.0` (pinned as `^0.8.0` in the generated `package.json`).
