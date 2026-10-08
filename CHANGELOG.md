@@ -3,6 +3,14 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
+## [0.8.0]
+
+Scaffolds projects on `@weave-kit/engine@0.8.0` (pinned as `^0.8.0` in the generated `package.json`).
+
+### Changed
+
+- Generated projects depend on `@weave-kit/engine@^0.8.0` (GraphQL adapter, named enums / schema v6).
+
 ## [0.7.0]
 
 Scaffolds projects on `@weave-kit/engine@0.7.0` (pinned as `^0.7.0` in the generated `package.json`)
