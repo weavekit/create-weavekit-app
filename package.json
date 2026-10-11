@@ -1,6 +1,6 @@
 {
   "name": "create-weavekit-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scaffold a new WeaveKit project interactively — `create-weavekit-app <name>`",
   "type": "module",
   "license": "MIT",

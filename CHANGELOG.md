@@ -3,6 +3,15 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.0.1]
+
+Scaffolds projects on `@weave-kit/engine@1.3.0` (pinned as `^1.3.0` in the generated `package.json`).
+
+### Changed
+
+- Generated projects depend on `@weave-kit/engine@^1.3.0` (MCP approval tools + resources, expanded
+  formula catalog). Engine adds only additive surface since 1.0, so no scaffold changes.
+
 ## [1.0.0]
 
 Scaffolds projects on `@weave-kit/engine@1.0.0` (pinned as `^1.0.0` in the generated `package.json`).
