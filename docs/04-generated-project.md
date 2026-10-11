@@ -34,3 +34,8 @@ The row scopes come from the `ownership: true` and `department: true` flags on `
 `identities` declare on-behalf-of identities that an agent may act as; RBAC decides each
 identity's tool surface. A sample `guardrails` block sets a rate limit and a console alert
 channel. Replace the placeholder auth key (`sk-admin`) before using it anywhere real.
+
+The commented `prompts` block is where you add your own **business MCP prompts** (user-invoked
+templates shown in an agent client). The schema-derived built-ins (`explore_data`, `object_guide`,
+`build_filter`, `run_workflow`) are always on; a `provider` adds your own. See
+[MCP prompts](https://docs.weavekit.io/engine/guides/agents/mcp/prompts).

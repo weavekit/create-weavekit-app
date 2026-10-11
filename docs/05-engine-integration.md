@@ -19,7 +19,10 @@ server, and registers graceful shutdown. The engine derives everything else from
 - `schema.json` files under `schemaDir` become PostgreSQL tables, a REST API, RBAC rules, an
   audit log, and TypeScript types.
 - The REST adapter serves requests under the configured prefix (`/api` by default).
-- The MCP endpoint exposes the objects as agent tools, scoped per identity.
+- The MCP endpoint exposes the objects as agent tools (scoped per identity), plus schema-derived
+  **resources** and **prompts**. Add your own business prompts (user-invoked templates) with a
+  `PromptsProvider` under `adapters.mcp.prompts.provider` — see
+  [MCP prompts](https://docs.weavekit.io/engine/guides/agents/mcp/prompts).
 
 Because the engine is headless, the generated project has no UI; consume it from
 [`@weave-kit/client`](https://github.com/weavekit/client) or any HTTP/MCP client.

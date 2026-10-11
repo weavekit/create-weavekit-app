@@ -79,8 +79,7 @@ async function main(): Promise<void> {
   if (result.gitInit) console.log('  initialized git repository');
   if (type === 'business') {
     console.log(
-      '\n> Note: `business` is currently a headless backend preset (REST/MCP/RBAC/audit/script).\n' +
-        '  No UI is scaffolded; *.client.js / pages layouts are experimental groundwork with no renderer yet.',
+      '\n> Note: `business` is a headless backend preset (REST/MCP/RBAC/audit/script) — no UI is scaffolded.',
     );
   }
   console.log('\nNext steps:');
