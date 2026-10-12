@@ -34,6 +34,20 @@ subsystems: {
 Script hooks run sandboxed in isolated workers (`*.server.js`). The other presets leave the
 subsystem out, so it costs nothing at runtime until you enable it.
 
+## Audit
+
+The `governance` preset enables the audit subsystem in the generated config:
+
+```ts
+subsystems: {
+  audit: { enabled: true, mode: 'transactional' },
+},
+```
+
+`transactional` writes the audit row inside the business transaction (crash-safe); `best-effort`
+(the default when you enable audit yourself) may lose the tail on a crash. The other presets leave
+audit off — enable it and pick a crash-safe mode for production. See the engine's audit guide.
+
 ## Workflow
 
 Presets never enable a state machine. It is declaration-driven and opt-in per object:

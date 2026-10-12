@@ -3,19 +3,22 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [1.0.2]
 
-Scaffolds projects on `@weave-kit/engine@1.4.0` (pinned as `^1.4.0` in the generated `package.json`).
+Scaffolds projects on `@weave-kit/engine@1.5.0` (pinned as `^1.5.0` in the generated `package.json`).
 
 ### Added
 
 - The generated `weavekit.config.ts` shows a commented `prompts` provider example — where a project
   adds its own business MCP prompts (user-invoked templates); the engine's schema-derived built-ins
   are always on. See the engine's MCP prompts guide.
+- The `governance` preset now enables the audit subsystem in the generated config, with
+  `mode: 'transactional'` (the audit row is written inside the business transaction — crash-safe).
 
 ### Changed
 
-- Generated projects depend on `@weave-kit/engine@^1.4.0` (MCP prompts; additive since 1.0).
+- Generated projects depend on `@weave-kit/engine@^1.5.0` (MCP prompts; governance audit default;
+  configurable list `total`; additive since 1.0).
 - The `business` note no longer mentions the retired UI groundwork (`*.client.js` / `pages` layouts).
 
 ## [1.0.1]
