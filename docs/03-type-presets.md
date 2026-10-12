@@ -1,6 +1,6 @@
 ---
 title: Type presets
-description: The four starting presets and how they configure the project.
+description: The three starting presets and how they configure the project.
 ---
 
 The `--type` value selects a starting preset: it sets `projectType` in `weavekit.config.ts`,
@@ -12,7 +12,6 @@ generated README. The core engine is always enabled; a preset never trims it.
 | `agent` (default) | AI-Agent backend — metadata-driven objects with REST access for AI agents | base field types only |
 | `governance` | Governance platform — auditable, permission-scoped business objects | semantic field types |
 | `service` | Business service — headless backend with RBAC and a REST API | semantic field types, script subsystem |
-| `business` | Business backend — objects and formulas on PostgreSQL | semantic field types, script subsystem |
 
 ## Field-type gating
 
@@ -23,7 +22,7 @@ outside the list is rejected. Extend the list in the config to opt in to more ty
 
 ## Script subsystem
 
-`service` and `business` enable the script subsystem:
+`service` enables the script subsystem:
 
 ```ts
 subsystems: {
@@ -59,9 +58,6 @@ weave workflow:open <object>      # adds workflowEnabled: true + a starter workf
 Only the `onTimeout` timer scheduler is a subsystem — add it with `weave module:add workflow` when you
 use state timeouts. See the engine [workflow guide](https://docs.weavekit.io/engine/guides/workflow).
 
-## About `business`
-
-`business` is currently a headless backend preset (REST/MCP/RBAC/audit/script) — it generates no UI.
-
 You can change the composition later with the CLI (`weave module:add` / `weave module:remove`);
 `weavekit.config.ts` is the source of truth.
+

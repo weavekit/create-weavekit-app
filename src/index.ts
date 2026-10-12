@@ -77,11 +77,6 @@ async function main(): Promise<void> {
     console.log(`  skipped (use --force to overwrite): ${result.skipped.join(', ')}`);
   }
   if (result.gitInit) console.log('  initialized git repository');
-  if (type === 'business') {
-    console.log(
-      '\n> Note: `business` is a headless backend preset (REST/MCP/RBAC/audit/script) — no UI is scaffolded.',
-    );
-  }
   console.log('\nNext steps:');
   console.log(`  cd ${name}`);
   console.log('  cp .env.example .env');

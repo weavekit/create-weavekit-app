@@ -46,7 +46,7 @@ export function parseArgs(argv: string[]): CliOptions {
 
   // --yes requires a name (create-next-app semantics: defaults need a target)
   if (options.yes && options.name === undefined) {
-    throw new Error('usage: create-weavekit-app <project-name> [--yes] [--type=agent|governance|service|business] [--no-git]');
+    throw new Error('usage: create-weavekit-app <project-name> [--yes] [--type=agent|governance|service] [--no-git]');
   }
   if (options.type !== undefined && !(Object.values(PROJECT_TYPES) as string[]).includes(options.type)) {
     throw new Error(`unknown --type "${options.type}" (expected ${Object.values(PROJECT_TYPES).join('|')})`);

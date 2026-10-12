@@ -12,7 +12,7 @@ describe('parseArgs', () => {
   });
 
   it('parses --type space-separated + -t short flag', () => {
-    expect(parseArgs(['my-app', '--type', 'business']).type).toBe('business');
+    expect(parseArgs(['my-app', '--type', 'governance']).type).toBe('governance');
     expect(parseArgs(['my-app', '-t', 'service']).type).toBe('service');
   });
 

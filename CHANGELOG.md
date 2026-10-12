@@ -3,6 +3,20 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.0]
+
+Scaffolds projects on `@weave-kit/engine@2.0.0` (pinned as `^2.0.0` in the generated `package.json`).
+
+### Changed
+
+- Generated projects depend on `@weave-kit/engine@^2.0.0` (the 2.0 breaking release: shared
+  `@weave-kit/contract` package, `tenant`→`scope`, retired layout/pages groundwork).
+
+### Removed
+
+- The `business` preset (`--type=business`). `--type` is now `agent | governance | service`; use
+  `service` for a headless business backend.
+
 ## [1.0.5]
 
 Scaffolds projects on `@weave-kit/engine@1.8.0` (pinned as `^1.8.0` in the generated `package.json`).

@@ -23,7 +23,7 @@ npx create-weavekit-app my-app --type=agent
 | Option | Description |
 | --- | --- |
 | `<name>` | Project directory name (required) |
-| `--type` | Starting preset: `agent` (default), `governance`, `service`, `business` |
+| `--type` | Starting preset: `agent` (default), `governance`, `service` |
 | `--yes` | Accept all defaults (a name is still required) |
 | `--no-git` | Skip `git init` |
 | `--force` | Scaffold into a non-empty directory |
