@@ -3,6 +3,15 @@
 All notable changes to `create-weavekit-app`. Format follows
 [Keep a Changelog](https://keepachangelog.com/); the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.0.4]
+
+Scaffolds projects on `@weave-kit/engine@1.7.0` (pinned as `^1.7.0` in the generated `package.json`).
+
+### Changed
+
+- Generated projects depend on `@weave-kit/engine@^1.7.0` (adds built-in OIDC/JWT auth via `auth.oidc`
+  and MCP OAuth protected-resource metadata; additive since 1.0).
+
 ## [1.0.3]
 
 Scaffolds projects on `@weave-kit/engine@1.6.0` (pinned as `^1.6.0` in the generated `package.json`).
